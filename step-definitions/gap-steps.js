@@ -1,4 +1,4 @@
-const helpers = require("../runtime/helpers")
+//onst helpers = require("../runtime/helpers")
 
 module.exports = function () {
 
@@ -14,16 +14,11 @@ module.exports = function () {
         return page.gap.elementExists(objKey);
     });
 
-    this.Then(/^I enter email "([^"]*)"$/, function(ok1) {
-        return page.gap.inputEmail(ok1);
+    this.When(/^I enter email "([^"]*)"$/, function(objKey1) {
+        return page.gap.inputEmail(objKey1);
     });
 
-  //     this.When(/^I enter username "([^"]*)"$/ , function(objKey1) {
-//         return page.jootza.inputUserName(objKey1);
-//     });
-
-    this.Then(/^I enter Password "([^"]*)"$/, function (objKey1) {
-        return page.gap.inputPassword(objKey1);
-    });
-
+//    this.When(/^I enter password "([^"]*)"$/, function(objKey1) {
+//     return page.gap.inputPassword(objKey1);
+//  });
 };

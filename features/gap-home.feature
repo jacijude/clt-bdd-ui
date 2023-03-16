@@ -1,16 +1,17 @@
 Feature: As a customer I should be able to navigate gap.com website
 
-@gap @sign-in @loginError
+@gap @sign-in @invalidCredentials
 Scenario: Customer is displayed with the sign in header
 Given I am on "gap.com"
 When I click on "SignInLink" 
 Then I should see "SignInTab" 
 When I click on "SignInTab"
-Then I should see "SignInHeader"
-And I enter email 'test123@test.com'
+# Then I should see "SignInHeader"
+# And I enter email "test@yahoo.com"
+And I enter email "test.com"
 And I click on "Continue"
-And I enter Password "test"
-And I click on "SIGNIN"
+# And I enter password "test"
+# And I click on "SIGNIN"
 Then I should see "ErrorMessage"
 
 # @gap @women

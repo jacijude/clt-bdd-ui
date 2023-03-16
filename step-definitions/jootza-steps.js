@@ -17,15 +17,15 @@
 //     });
 
 
-//     this.Given(/^I am logged on to the Jootza portal as "([^"]*)"$/, function (user) {
-//         return page.jootza.loginPortal(user);
-//     });
+//   //  this.Given(/^I am logged on to the Jootza portal as "([^"]*)"$/, function (user) {
+//     //    return page.jootza.loginPortal(user);
+//     //});
 
 //     this.Then(/^I should see the approver name as "([^"]*)"$/, function (value) {
 //         return page.jootza.verifyApproverName(value);
 //     });
 
-//     this.Given('I am logged on into the Jootza portal as Kavitha', async function(){
+//    // this.Given('I am logged on into the Jootza portal as Kavitha', async function(){
 //         // navigate to jootza.com - done
 //         // enter username as "kavithas" - done
 //         // enter password as "demo1234" - done
@@ -40,7 +40,7 @@
 //     })
 
 //     // I am logged on into the Jootza portal as "<username>" with "<password>"
-//     this.Given(/I am logged on into the Jootza portal as "([^"]*)" with "([^"]*)"$/, async function(username, password){
+//     //this.Given(/I am logged on into the Jootza portal as "([^"]*)" with "([^"]*)"$/, async function(username, password){
 //         // navigate to jootza.com - done
 //         // enter username as "kavithas" - done
 //         // enter password as "demo1234" - done
